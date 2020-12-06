@@ -19,6 +19,9 @@ def main():
             passportStrings.append(passportString)
             passportString = ''
 
+    if passportString:
+        passportStrings.append(passportString)
+
     # for each passport entry
     for string in passportStrings:
         pairs = string.split(' ')
@@ -37,7 +40,6 @@ def main():
     for passport in passportDicts:
         if isValidPassport(passport):
             validPassports += 1
-            print(f'{validPassports}: {passport}')
 
     # print outcome
     print('\n' + str(validPassports))

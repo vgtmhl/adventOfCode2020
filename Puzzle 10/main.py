@@ -17,7 +17,6 @@ def main():
         seatIDs.append(seatID)
 
     # find my seatID
-    seatIDs.sort()
     seatIDs = [int(id) for id in seatIDs]
 
     for i in range(min(seatIDs), max(seatIDs)):
