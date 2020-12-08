@@ -1,5 +1,5 @@
 def main():
-    inputFile = open("Inputs/input_day_6.txt", "r").read().splitlines()
+    inputFile = open("Week 1/Inputs/input_day_6.txt", "r").read().splitlines()
     groupEntry = ''
     groupEntries = []
     totalAnswered = 0
@@ -7,19 +7,23 @@ def main():
     # manipulate so that results from the same group are on one line only
     for line in inputFile:
         if line:
-            groupEntry += line
+            groupEntry += (line + ' ')
         else:
             groupEntries.append(groupEntry)
             groupEntry = ''
 
-    # for last line
     if groupEntry:
         groupEntries.append(groupEntry)
 
-    # remove duplicates and add value to counter
+
     for entry in groupEntries:
-        entry = list(set(entry))
-        totalAnswered += len(entry)
+        people = entry.count(' ')
+        for ans in list(set(entry.replace(' ', ''))):
+            if entry.count(ans) == people:
+                totalAnswered += 1
+            
+
+    print(totalAnswered)
 
 
 if __name__ == '__main__':

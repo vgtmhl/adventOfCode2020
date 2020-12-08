@@ -4,7 +4,7 @@ totalCols = 8
 
 def main():
 
-    lines = open("Inputs/input_day_5.txt", "r").read().splitlines()
+    lines = open("Week 1/Inputs/input_day_5.txt", "r").read().splitlines()
     highestSeatID = 0
 
     for line in lines:

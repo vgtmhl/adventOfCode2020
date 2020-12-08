@@ -1,5 +1,5 @@
 def main():
-    lines = open("Inputs/input_day_3.txt", "r").read().splitlines()
+    lines = open("Week 1/Inputs/input_day_3.txt", "r").read().splitlines()
     treesForSlopes = [0, 0, 0, 0, 0]
     totalTrees = 1
 

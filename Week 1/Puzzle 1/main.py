@@ -1,6 +1,6 @@
 def main():
 
-    inputFile = open("Inputs/input_day_1.txt", "r").read().splitlines()
+    inputFile = open("Week 1/Inputs/input_day_1.txt", "r").read().splitlines()
     arr = [line for line in inputFile]
     arr.sort()
 

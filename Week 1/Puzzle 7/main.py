@@ -1,5 +1,5 @@
 def main():
-    input = open("Inputs/input_day_4.txt", "r").read().splitlines()
+    input = open("Week 1/Inputs/input_day_4.txt", "r").read().splitlines()
     
     # needed variables declaration
     validPassports = 0
